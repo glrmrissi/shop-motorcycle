@@ -32,3 +32,11 @@ header {
     background-color: #535353;
     color: aliceblue;
 }
+#titulo {
+    font-family: Tahoma;
+    font-size: 30pt;
+}
+#subtitulo {
+    font-family: Tahoma;
+    font-size: 25pt;
+}
