@@ -1,42 +1,88 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../../../assets/img/fundo.jpg');
+    font-family: Arial;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+header {
+    background-color: rgba(255, 255, 255, 0.555);
+    color: black;
+    border-radius: 10px;
+}
+
+#titulo {
+    font-family: Tahoma;
+    font-size: 30pt;
+}
+
+#subtitulo {
+    font-family: Tahoma;
+    font-size: 25pt;
+}
+
+#whatsapplink {
+    color: black;
+    position: relative;
+    text-decoration: underline;
+    transition: transform 0.5s ease;
+    display: inline-block;
+}
+
+#whatsapplink:hover {
+    transform: scale(1.1);
+    color: blue;
+}
+
+#whatsapplink::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #4c00ff;
+    transition: width 0.3s ease;
+}
+
+#whatsapplink:hover::after {
+    width: 100%;
+}
+
 .motos {
     display: flex;
     gap: 10px;
 }
+
 .motos article {
-    background-color: #535353;
+    background-color: rgba(255, 255, 255, 0.658);
     border-radius: 10px;
-    color: aliceblue;
+    color: black;
     padding: 25px;
     width: 350px;
 }
+
 .motos article img {
     border-radius: 25px;
 }
+
 .img-moto {
     display: flex;
     width: 275px;
     height: 183px;
 }
+
 .img-moto img {
     object-fit: cover;
     height: 100%;
     width: 100%;
 }
-body {
-    background-color:rgb(138, 133, 124)
+
+#fichatecnica {
+    text-align: justify;
 }
-header {
-    background-color: #535353;
-    color: aliceblue;
-}
-#titulo {
-    font-family: Tahoma;
-    font-size: 30pt;
-}
-#subtitulo {
-    font-family: Tahoma;
-    font-size: 25pt;
+
+#negrito {
+    color: black;
+    font-weight: bolder;
 }
